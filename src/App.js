@@ -1,9 +1,6 @@
+import React from "react";
 import "./App.css";
-
+import Weather from "./Weather";
 export default function App() {
-  return (
-    <div className="container ">
-      <div className="btn btn-primary ">click on me</div>
-    </div>
-  );
+  return <Weather />;
 }
