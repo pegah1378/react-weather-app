@@ -2,17 +2,41 @@
   padding-top: 100px;
 }
 .weather {
+  background-image: url("images/sky.jpeg");
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px;
   border: 1px solid #dadde1;
   border-radius: 25px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
 .info {
   list-style-type: none;
   display: block;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
 }
 .date {
   list-style-type: none;
 }
 #search-btn {
+  direction: rtl !important;
   margin-left: 10px;
+}
+form {
+  direction: rtl !important;
+}
+#box {
+  padding: 5px;
+  text-align: center !important;
+}
+#defualt-degree {
+  font-size: 48px;
+}
+.city {
+  font-style: italic;
+  opacity: 0.9;
+  margin-left: 25px;
 }

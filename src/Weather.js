@@ -5,14 +5,13 @@ export default function Weather() {
     <div className="container" id="all">
       <div className="weather">
         <form>
-          <input type="search" placeholder="Enter a city" />
-
           <input
             type="submit"
             value="search"
             className="btn btn-success"
             id="search-btn"
           />
+          <input type="search" placeholder="Enter a city" id="box" />
         </form>
         <h1 className="city">London </h1>
         <ul className="date">
@@ -27,7 +26,7 @@ export default function Weather() {
               width={180}
               id="icon"
             />
-            <strong>14°C</strong>
+            <strong id="defualt-degree">14°C</strong>
           </div>
 
           <div className="col-6">
