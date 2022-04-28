@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Weather.css";
 export default function FormattedDate(props) {
   let days = [
     "Sunday",
@@ -20,7 +20,7 @@ export default function FormattedDate(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <div>
+    <div id="time">
       {day} {hours} : {minutes}
     </div>
   );

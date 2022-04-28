@@ -7,6 +7,7 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -16,12 +17,9 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconUrl:
-        "https://bmcdn.nl/assets/weather-icons/v2.1/fill/partly-cloudy-day.svg",
+      icon: response.data.weather[0].icon,
     });
-    console.log(response.data);
   }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -40,9 +38,9 @@ export default function Weather(props) {
       <div className="container" id="all">
         <div className="weather">
           <form onSubmit={handleSubmit}>
-            <div class="form-group">
+            <div className="form-group">
               <button type="submit">
-                <i class="fa fa-search"></i>
+                <i className="fa fa-search"></i>
               </button>
               <input
                 type="search"
@@ -59,6 +57,10 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "loading";
+    return (
+      <div className="container" id="load">
+        Loading...
+      </div>
+    );
   }
 }
