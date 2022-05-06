@@ -1,0 +1,23 @@
+.WeatherForecast-day {
+  margin-left: 60px !important;
+  line-height: 25px;
+  margin-bottom: 10px !important;
+  font-weight: bolder;
+}
+
+.WeatherForecast-temperatures {
+  margin-left: 50px !important;
+  line-height: 25px;
+  margin-bottom: 10px !important;
+}
+.WeatherForecast-temperature-max {
+  font-weight: bolder;
+  color: black;
+}
+.WeatherForecast-temperature-min {
+  font-weight: bold;
+  color: #3d3434;
+}
+#tem {
+  margin-left: 15px !important;
+}

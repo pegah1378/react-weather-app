@@ -2,7 +2,8 @@
   padding-top: 100px;
 }
 .weather {
-  background-image: url("images/sky.jpeg");
+  background-image: url("images/output-onlinepngtools.png");
+
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
